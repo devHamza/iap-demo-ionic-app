@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Credits
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/imgs/credits/credits_10.png">
+        <span class="price" [innerHTML]="displayedPrices['credits_10']"></span>
+      </ion-col>
+      <ion-col>
+        <img src="assets/imgs/credits/credits_50.png">
+        <span class="price" [innerHTML]="displayedPrices['credits_50']"></span>
+      </ion-col>
+      <ion-col>
+        <img src="assets/imgs/credits/credits_100.png">
+        <span class="price" [innerHTML]="displayedPrices['credits_100']"></span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button class="buy-btn" (click)="buyCredit('credits_10')" ion-button round full>
+          Buy
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="buy-btn" (click)="buyCredit('credits_50')" ion-button round full>
+          Buy
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="buy-btn" (click)="buyCredit('credits_100')" ion-button round full>
+          Buy
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

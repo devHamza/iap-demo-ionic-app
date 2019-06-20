@@ -1,0 +1,7 @@
+{
+  "name": "iap-demo-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
